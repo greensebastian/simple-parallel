@@ -1,0 +1,28 @@
+{
+  "name": "simple-parallel",
+  "version": "0.0.1",
+  "description": "Simple parallelization helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greensebastian/simple-parallel.git"
+  },
+  "keywords": [
+    "batch",
+    "async",
+    "parallel"
+  ],
+  "author": "Sebastian Green",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greensebastian/simple-parallel/issues"
+  },
+  "homepage": "https://github.com/greensebastian/simple-parallel#readme",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^8.1.3"
+  }
+}
