@@ -1,6 +1,9 @@
 # simple-parallel
 This is a very basic parallelization helper for running async functions in parallel or concurrently based on a maximum number of concurrent functions.
 
+## Disclaimer
+This was inspired by a question on reddit, and was an experiment on my part to look at what was possible with simple parallel execution in js. There are obvious problems with error handling, namely that the pooled execution error handling is not really there at all.
+
 ## Usage
 The batch function runs the provided functions in order in batches of the provided size. After each batch is completed, the callbacks are called in order for the completed functions, before the next batch is called.
 
@@ -47,4 +50,7 @@ let callbackExample = async () => {
   );
   console.log(output); // ["test2", "test3", "test1"]
 }
+
+batchExample();
+callbackExample();
 ```
